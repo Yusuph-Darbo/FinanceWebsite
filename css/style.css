@@ -1,11 +1,17 @@
+/* ============================================
+   Base Styles
+   ============================================ */
+
 body {
   margin: 0;
-  font-family: "DM sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #ffffff;
   background-color: #010725;
 }
 
-/* Typography */
+/* ============================================
+   Typography
+   ============================================ */
 
 h1 {
   font-weight: 600;
@@ -25,10 +31,14 @@ button {
   z-index: 2; /* ensures they stay above the circle */
 }
 
+/* ============================================
+   Background Elements
+   ============================================ */
+
 .background-circle {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 600px;
   height: auto;
   z-index: 1; /* behind all content */
@@ -43,6 +53,9 @@ button {
   border: none;
   color: #ffffff;
   margin-right: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .download-btn:hover,
@@ -56,6 +69,9 @@ button {
   border-radius: 50px;
   border: none;
   color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .pricing-btn:hover,
@@ -63,29 +79,47 @@ button {
   background-color: #0328ee;
 }
 
-/* Header */
+/* ============================================
+   Header
+   ============================================ */
+
 header {
   display: flex;
   padding: 1rem 2rem;
   align-items: center;
   background-color: #010725;
   margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
-ul {
-  list-style: none; /* remove bullet points */
+.logo {
+  margin-left: 50px;
+}
+
+.header-links {
+  border-left: 1px solid #010d50;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.header-links ul {
+  list-style: none;
+  display: flex;
   align-items: center;
   gap: 2rem;
   margin-left: 15px;
   padding: 5px;
+  flex: 1;
+  justify-content: flex-start;
 }
 
-li a {
+.header-links li a {
   text-decoration: none;
   font-weight: 600;
   color: #ffffff;
+  transition: color 0.3s ease;
 }
 
 .title-border {
@@ -106,17 +140,18 @@ li a {
 
 .header-links .download-btn {
   margin-left: auto;
+  margin-right: 0;
 }
 
-.logo {
-  margin-left: 50px;
-}
-
-/* Main */
+/* ============================================
+   Main Content
+   ============================================ */
 
 main {
   background-color: #010725;
   margin-top: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-section {
@@ -135,7 +170,7 @@ main {
 .laptop {
   width: 650px;
   max-width: 100%;
-  flex-shrink: 0; /* Stops the laptop from shrinking */
+  flex-shrink: 0;
   margin-right: 0;
 }
 
@@ -148,6 +183,26 @@ main {
 
 .sectionTwo {
   text-align: center;
+  padding: 80px 0;
 }
 
-/* Footer */
+.sectionTwo ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.sectionTwo li {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+/* Footer styles can be added here */
