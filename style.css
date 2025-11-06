@@ -5,19 +5,25 @@ body {
 
 /* Typography */
 
+h1 {
+  margin: 0 40px;
+}
+
 /* Header */
 header {
   display: flex;
   padding: 1rem 2rem;
+  align-items: center;
+  border-bottom: 1px solid #eee; /* subtle bottom border */
 }
 
 ul {
   list-style: none; /* remove bullet points */
   display: flex;
-  justify-content: center; /* or space-between / flex-end */
-  align-items: center; /* vertically align items */
-  gap: 2rem; /* spacing between items */
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 15px;
   padding: 0;
 }
 
@@ -25,6 +31,10 @@ li a {
   text-decoration: none;
   color: #222;
   font-weight: 600;
+}
+
+.title-border {
+  border: 1px solid #010d50;
 }
 
 /* Main */
