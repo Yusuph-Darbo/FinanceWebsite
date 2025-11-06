@@ -8,10 +8,23 @@ body {
 /* Header */
 header {
   display: flex;
-  flex-direction: row;
+  padding: 1rem 2rem;
 }
 
-ol {
+ul {
+  list-style: none; /* remove bullet points */
+  display: flex;
+  justify-content: center; /* or space-between / flex-end */
+  align-items: center; /* vertically align items */
+  gap: 2rem; /* spacing between items */
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
 }
 
 /* Main */
