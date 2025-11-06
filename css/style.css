@@ -7,8 +7,29 @@ body {
 
 /* Typography */
 
+h1 {
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
 h2 {
   margin: 0 40px 0 15px;
+}
+
+.download-btn {
+  background-color: #0328ee;
+  padding: 15px 22px;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+}
+
+.pricing-btn {
+  background-color: #1a203b;
+  padding: 15px 22px;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
 }
 
 /* Header */
