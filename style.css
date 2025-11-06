@@ -24,7 +24,7 @@ ul {
   align-items: center;
   gap: 2rem;
   margin-left: 15px;
-  padding: 0;
+  padding: 5px;
 }
 
 li a {
@@ -35,6 +35,10 @@ li a {
 
 .title-border {
   border: 1px solid #010d50;
+}
+
+.header-links {
+  border-left: 1px solid #010d50;
 }
 
 /* Main */
