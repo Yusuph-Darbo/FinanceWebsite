@@ -1,11 +1,12 @@
 body {
   margin: 0;
   font-family: "DM sans", sans-serif;
+  color: #ffffff;
 }
 
 /* Typography */
 
-h1 {
+h2 {
   margin: 0 40px 0 15px;
 }
 
@@ -16,6 +17,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #eee; /* subtle bottom border */
   background-color: #010725;
+  margin-bottom: 0;
 }
 
 ul {
@@ -30,8 +32,8 @@ ul {
 
 li a {
   text-decoration: none;
-  color: #222;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .title-border {
@@ -47,5 +49,13 @@ li a {
 }
 
 /* Main */
+
+main {
+  background-color: #010725;
+  margin-top: 0;
+}
+
+.hero-section {
+}
 
 /* Footer */
