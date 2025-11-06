@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "DM sans", sans-serif;
-  background-color: grey;
 }
 
 /* Typography */
@@ -16,6 +15,7 @@ header {
   padding: 1rem 2rem;
   align-items: center;
   border-bottom: 1px solid #eee; /* subtle bottom border */
+  background-color: #010725;
 }
 
 ul {
