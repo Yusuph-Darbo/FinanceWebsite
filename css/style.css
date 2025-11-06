@@ -22,6 +22,12 @@ h2 {
   border-radius: 50px;
   border: none;
   color: #ffffff;
+  margin-right: 20px;
+}
+
+.download-btn:hover,
+.download-btn:active {
+  background-color: #031fb4;
 }
 
 .pricing-btn {
@@ -30,6 +36,11 @@ h2 {
   border-radius: 50px;
   border: none;
   color: #ffffff;
+}
+
+.pricing-btn:hover,
+.pricing-btn:active {
+  background-color: #0328ee;
 }
 
 /* Header */
