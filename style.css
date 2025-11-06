@@ -2,3 +2,18 @@ body {
   margin: 0;
   font-family: "DM sans", sans-serif;
 }
+
+/* Typography */
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+ol {
+}
+
+/* Main */
+
+/* Footer */
