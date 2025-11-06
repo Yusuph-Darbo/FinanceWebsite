@@ -7,7 +7,7 @@ body {
 /* Typography */
 
 h1 {
-  margin: 0 40px;
+  margin: 0 40px 0 15px;
 }
 
 /* Header */
@@ -40,6 +40,10 @@ li a {
 
 .header-links {
   border-left: 1px solid #010d50;
+}
+
+.logo {
+  margin-left: 50px;
 }
 
 /* Main */
