@@ -16,15 +16,24 @@ h2 {
   margin: 0 40px 0 15px;
 }
 
+h1,
+h2,
+p,
+a,
+button {
+  position: relative;
+  z-index: 2; /* ensures they stay above the circle */
+}
+
 .background-circle {
-  position: fixed; /* stays at top-left of the viewport */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 500px; /* adjust to fit your design */
+  width: 600px;
   height: auto;
-  z-index: -1; /* behind all content */
+  z-index: 1; /* behind all content */
   pointer-events: none; /* makes sure it doesn't block clicks */
-  opacity: 0.9; /* optional: slightly transparent if needed */
+  opacity: 0.3;
 }
 
 .download-btn {
