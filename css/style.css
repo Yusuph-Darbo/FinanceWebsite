@@ -93,7 +93,8 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 0 0 0 8%;
-  margin: 150px 0;
+  gap: 10px;
+  margin: 100px 0;
 }
 
 .text-section-hero {
@@ -103,15 +104,15 @@ main {
 .laptop {
   width: 650px;
   max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  flex-shrink: 0; /* Stops the laptop from shrinking */
   margin-right: 0;
 }
 
-.laptop {
-  flex-shrink: 0; /* keeps the laptop from shrinking */
-  margin-right: 0;
+.laptop img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 /* Footer */
