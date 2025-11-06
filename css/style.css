@@ -16,6 +16,17 @@ h2 {
   margin: 0 40px 0 15px;
 }
 
+.background-circle {
+  position: fixed; /* stays at top-left of the viewport */
+  top: 0;
+  left: 0;
+  width: 500px; /* adjust to fit your design */
+  height: auto;
+  z-index: -1; /* behind all content */
+  pointer-events: none; /* makes sure it doesn't block clicks */
+  opacity: 0.9; /* optional: slightly transparent if needed */
+}
+
 .download-btn {
   background-color: #0328ee;
   padding: 15px 22px;
@@ -48,7 +59,6 @@ header {
   display: flex;
   padding: 1rem 2rem;
   align-items: center;
-  border-bottom: 1px solid #eee; /* subtle bottom border */
   background-color: #010725;
   margin-bottom: 0;
 }
