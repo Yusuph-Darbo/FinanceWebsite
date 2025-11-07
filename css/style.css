@@ -213,18 +213,26 @@ main {
   display: inline-block;
 }
 
-.sectionThree {
+.section-three {
   text-align: center;
   padding: 80px 0;
 }
 
 .sectionThreeContainer {
   display: flex;
+  flex-direction: column;
 }
 
-.blueBox {
+.blue-box {
   background-color: #010d50;
   border-radius: 50px;
+  width: 295px;
+  height: 325px;
+  margin-top: 20px;
+  padding: 20px 0 0 10px;
+}
+
+.featureBox {
 }
 
 /* ============================================
