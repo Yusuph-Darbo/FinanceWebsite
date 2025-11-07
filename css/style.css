@@ -201,6 +201,18 @@ main {
   font-weight: 600;
 }
 
+.sectionTwo ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionTwoIcon {
+  height: 28px;
+  width: auto;
+  display: inline-block;
+}
+
 .sectionThree {
   text-align: center;
   padding: 80px 0;
