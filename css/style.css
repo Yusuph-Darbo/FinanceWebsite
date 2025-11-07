@@ -181,6 +181,10 @@ main {
   object-fit: contain;
 }
 
+/* ============================================
+   Section Two
+   ============================================ */
+
 .sectionTwo {
   text-align: center;
   padding: 80px 0;
@@ -212,6 +216,10 @@ main {
   width: auto;
   display: inline-block;
 }
+
+/* ============================================
+   Section Three
+   ============================================ */
 
 .sectionThree {
   text-align: center;
@@ -309,7 +317,8 @@ main {
 }
 
 #section3Download-btn {
-  margin-top: 40px;
+  margin-top: 44px;
+  padding: 30px 60px;
 }
 
 /* ============================================
@@ -355,7 +364,6 @@ main {
 }
 
 .sectionFour-description {
-  color: #c8d0ff;
   line-height: 1.6;
   margin-bottom: 40px;
   font-size: 1.1rem;
