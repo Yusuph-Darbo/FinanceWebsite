@@ -218,6 +218,15 @@ main {
   padding: 80px 0;
 }
 
+.sectionThreeContainer {
+  display: flex;
+}
+
+.blueBox {
+  background-color: #010d50;
+  border-radius: 50px;
+}
+
 /* ============================================
    Footer
    ============================================ */
