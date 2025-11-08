@@ -431,7 +431,7 @@ main {
 
 .sectionFiveContainer {
   max-width: 1400px;
-  margin: 0;
+  margin: 0 0 0 170px;
   padding: 0 0 0 8%;
   display: flex;
   align-items: center;
@@ -518,7 +518,7 @@ main {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-60%) translateX(-0px);
+  transform: translateY(-50%) translateX(-30px) scale(1.1);
   width: 650px;
   max-width: 40vw; /* responsive sizing */
 }
