@@ -548,6 +548,12 @@ main {
   max-width: 500px;
 }
 
+#section6Download-btn {
+  background-color: white;
+  color: #0328ee;
+  margin-top: 20px;
+}
+
 /* ============================================
    Footer
    ============================================ */
