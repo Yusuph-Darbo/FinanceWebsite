@@ -531,5 +531,23 @@ main {
 }
 
 /* ============================================
+   Section Six
+   ============================================ */
+
+.sectionSix {
+  background-color: #0328ee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 8%;
+  gap: 10px;
+  margin: 90px 0;
+}
+
+.sectionSixContainer {
+  max-width: 500px;
+}
+
+/* ============================================
    Footer
    ============================================ */
