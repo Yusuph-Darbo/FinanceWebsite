@@ -256,7 +256,7 @@ main {
 }
 
 .section-three-container .feature-box {
-  background: rgba(12, 22, 72, 0.9);
+  background: #010d50;
   border-radius: 40px;
   padding: 36px;
   text-align: left;
@@ -425,15 +425,19 @@ main {
 .sectionFive {
   padding: 100px 0;
   background-color: #010725;
+  overflow: hidden;
+  position: relative;
 }
 
 .sectionFiveContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 32px;
+  max-width: 1400px;
+  margin: 0;
+  padding: 0 0 0 8%;
   display: flex;
   align-items: center;
   gap: 80px;
+  position: relative;
+  width: 100%;
 }
 
 .sectionFive-content {
@@ -451,20 +455,25 @@ main {
   line-height: 1.6;
   margin-bottom: 40px;
   font-size: 1.1rem;
-  color: #c8d0ff;
 }
 
 .sectionFive-image {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: auto;
 }
 
 .sectionFive-image img {
-  width: 100%;
-  max-width: 600px;
+  width: auto;
   height: auto;
+  min-width: 750px;
+  transform: scale(1.1);
+  transform-origin: right center;
 }
 
 .sectionFive-list {
@@ -500,6 +509,7 @@ main {
   .sectionFiveContainer {
     flex-direction: column;
     gap: 48px;
+    padding: 0 32px;
   }
 
   .sectionFive-content {
@@ -509,13 +519,21 @@ main {
 
   .sectionFive-image {
     order: 2;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .sectionFive-image img {
+    min-width: auto;
+    width: 50px;
+    max-width: 600px;
+    transform: scale(1);
   }
 
   .sectionFive-list-item {
     justify-content: center;
   }
 }
-
 
 /* ============================================
    Footer
