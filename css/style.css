@@ -425,7 +425,7 @@ main {
 .sectionFive {
   padding: 100px 0;
   background-color: #010725;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -466,14 +466,6 @@ main {
   right: 0;
   top: 50%;
   width: auto;
-}
-
-.sectionFive-image img {
-  width: auto;
-  height: auto;
-  min-width: 750px;
-  transform: scale(1.1);
-  transform-origin: right center;
 }
 
 .sectionFive-list {
@@ -517,22 +509,25 @@ main {
     text-align: center;
   }
 
-  .sectionFive-image {
-    order: 2;
-    margin-right: 0;
-    justify-content: center;
-  }
-
-  .sectionFive-image img {
-    min-width: auto;
-    width: 50px;
-    max-width: 600px;
-    transform: scale(1);
-  }
-
   .sectionFive-list-item {
     justify-content: center;
   }
+}
+
+.sectionFive .laptop {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-60%) translateX(-0px);
+  width: 650px;
+  max-width: 40vw; /* responsive sizing */
+}
+
+.sectionFive .laptop img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transform-origin: right center;
 }
 
 /* ============================================
