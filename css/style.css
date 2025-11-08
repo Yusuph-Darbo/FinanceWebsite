@@ -421,8 +421,101 @@ main {
 /* ============================================
    Section Five
    ============================================ */
-  
-   
+
+.sectionFive {
+  padding: 100px 0;
+  background-color: #010725;
+}
+
+.sectionFiveContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.sectionFive-content {
+  flex: 1;
+}
+
+.sectionFive-content h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.sectionFive-description {
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #c8d0ff;
+}
+
+.sectionFive-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionFive-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.sectionFive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionFive-list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sectionFive-list-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sectionFive-list-item p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 968px) {
+  .sectionFiveContainer {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .sectionFive-content {
+    order: 1;
+    text-align: center;
+  }
+
+  .sectionFive-image {
+    order: 2;
+  }
+
+  .sectionFive-list-item {
+    justify-content: center;
+  }
+}
+
 
 /* ============================================
    Footer
