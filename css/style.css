@@ -427,6 +427,7 @@ main {
   background-color: #010725;
   overflow: visible;
   position: relative;
+  margin-bottom: 350px;
 }
 
 .sectionFiveContainer {
@@ -552,6 +553,12 @@ main {
   background-color: white;
   color: #0328ee;
   margin-top: 20px;
+}
+
+#section6Download-btn:hover,
+#section6Download-btn:active {
+  background-color: #031fb4;
+  color: #ffffff;
 }
 
 /* ============================================
