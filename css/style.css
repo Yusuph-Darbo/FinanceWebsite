@@ -426,7 +426,7 @@ main {
 .sectionFive {
   padding: 100px 0;
   background-color: #010725;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   margin-bottom: 350px;
 }
