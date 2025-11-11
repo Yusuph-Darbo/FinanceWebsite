@@ -562,5 +562,115 @@ main {
 }
 
 /* ============================================
+   Section Seven
+   ============================================ */
+
+.sectionSeven {
+  display: flex;
+}
+
+.sectionSevenContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.sectionSevenContainer h2 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+.testimonial-slider {
+  position: relative;
+  min-height: 160px;
+  margin: 0 auto 28px;
+}
+
+.testimonial {
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.testimonial.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial p {
+  max-width: 760px;
+  margin: 0 auto 14px;
+  line-height: 1.7;
+  color: #e6e8ff;
+}
+
+.testimonial h3 {
+  margin: 0;
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+}
+
+.testimonial h4 {
+  margin: 6px 0 0 0;
+  font-weight: 500;
+  color: #aab0d4;
+  font-size: 0.95rem;
+}
+
+.testimonial-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 10px 0 26px;
+}
+
+.testimonial-nav .nav-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  transition: transform 160ms ease;
+}
+
+.testimonial-nav .nav-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(3, 40, 238, 0.5);
+  border-radius: 50%;
+}
+
+.testimonial-nav .nav-btn img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid transparent;
+  opacity: 0.45; /* faded when not active */
+  transition: opacity 200ms ease, border-color 200ms ease, transform 160ms ease;
+}
+
+.testimonial-nav .nav-btn:hover img {
+  transform: translateY(-2px);
+}
+
+.testimonial-nav .nav-btn.active img {
+  opacity: 1;
+  border-color: #0328ee;
+}
+
+@media (max-width: 640px) {
+  .testimonial-nav .nav-btn img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ============================================
    Footer
    ============================================ */
