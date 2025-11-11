@@ -7,6 +7,7 @@ body {
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
   background-color: #010725;
+  overflow-x: hidden;
 }
 
 /* ============================================
@@ -425,20 +426,21 @@ main {
 .sectionFive {
   padding: 100px 0;
   background-color: #010725;
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   margin-bottom: 350px;
 }
 
 .sectionFiveContainer {
   max-width: 1400px;
-  margin: 0 0 0 100px;
-  padding: 0 0 0 8%;
+  margin: 0 auto;
+  padding: 0 clamp(32px, 8%, 120px);
   display: flex;
   align-items: center;
   gap: 80px;
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .sectionFive-content {
@@ -498,11 +500,36 @@ main {
   line-height: 1.5;
 }
 
+.sectionFive .laptop {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 650px;
+  max-width: min(45vw, 650px);
+  max-height: 80vh;
+  z-index: 1;
+}
+
+@media (min-width: 1600px) {
+  .sectionFive .laptop {
+    right: calc((100vw - 1400px) / 2);
+  }
+}
+
+.sectionFive .laptop img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 @media (max-width: 968px) {
   .sectionFiveContainer {
     flex-direction: column;
     gap: 48px;
     padding: 0 32px;
+    margin: 0;
   }
 
   .sectionFive-content {
@@ -513,22 +540,21 @@ main {
   .sectionFive-list-item {
     justify-content: center;
   }
-}
 
-.sectionFive .laptop {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) translateX(-30px) scale(1.1);
-  width: 650px;
-  max-width: 40vw; /* responsive sizing */
-}
+  .sectionFive .laptop {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    max-height: none;
+  }
 
-.sectionFive .laptop img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transform-origin: right center;
+  .sectionFive {
+    margin-bottom: 100px;
+  }
 }
 
 /* ============================================
