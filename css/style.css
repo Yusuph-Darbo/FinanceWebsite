@@ -716,8 +716,9 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 clamp(32px, 8%, 120px);
-  /* Reserve space on the right for the video so text doesn't flow underneath */
-  padding-right: clamp(320px, 45vw, 700px);
+  /* Reserve space on the right for the video so text doesn't overlap */
+  /* Video is 650px wide + spacing, so we need padding-right to keep content area separate */
+  padding-right: clamp(750px, 60vw, 850px);
   display: flex;
   align-items: center;
   gap: 80px;
@@ -772,14 +773,15 @@ main {
   line-height: 1.5;
 }
 
-/* Video container positioned like sectionFive laptop */
+/* Video container positioned like sectionFive laptop but with spacing from edge */
 .sectionEightVideo {
   position: absolute;
-  right: 0;
+  right: clamp(32px, 8%, 120px);
   top: 50%;
   transform: translateY(-50%);
   width: 650px;
   max-width: min(45vw, 650px);
+  max-height: 80vh;
   z-index: 1;
 }
 
@@ -794,7 +796,7 @@ main {
     rgba(1, 13, 80, 0.9) 60%,
     rgba(1, 7, 37, 1) 100%
   );
-  box-shadow: 0 30px 80px rgba(3, 40, 238, 0.25);
+  box-shadow: 0 30px 80px rgba(110, 113, 131, 0.25);
   cursor: pointer;
   overflow: hidden;
 }
