@@ -837,6 +837,38 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+@media (max-width: 968px) {
+  .sectionEightContainer {
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 32px;
+    margin: 0;
+  }
+
+  .sectionEightContent {
+    order: 1;
+    text-align: center;
+  }
+
+  .sectionEightContent li {
+    justify-content: center;
+  }
+
+  .sectionEightVideo {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .sectionEight {
+    margin-bottom: 100px;
+  }
+}
+
 /* ============================================
    Footer
    ============================================ */
