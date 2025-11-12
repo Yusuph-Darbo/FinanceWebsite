@@ -753,6 +753,31 @@ main {
   gap: 16px;
 }
 
+.sectionEightContent li img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sectionEightContent li p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Video container positioned like sectionFive laptop */
+.sectionEightVideo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 650px;
+  max-width: min(45vw, 650px);
+  z-index: 1;
+}
+
 /* ============================================
    Footer
    ============================================ */
