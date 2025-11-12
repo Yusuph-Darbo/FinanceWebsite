@@ -812,6 +812,31 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
+.play-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 22px solid #0328ee;
+}
+
+.video-label {
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: rgba(1, 13, 80, 0.6);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 /* ============================================
    Footer
    ============================================ */
