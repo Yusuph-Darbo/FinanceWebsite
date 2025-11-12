@@ -435,6 +435,8 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 clamp(32px, 8%, 120px);
+  /* Reserve space on the right for the laptop so text doesn't flow underneath */
+  padding-right: clamp(320px, 45vw, 700px);
   display: flex;
   align-items: center;
   gap: 80px;
@@ -530,6 +532,7 @@ main {
     gap: 48px;
     padding: 0 32px;
     margin: 0;
+    padding-right: 0; /* reset on mobile */
   }
 
   .sectionFive-content {
@@ -713,6 +716,8 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 clamp(32px, 8%, 120px);
+  /* Reserve space on the right for the video so text doesn't flow underneath */
+  padding-right: clamp(320px, 45vw, 700px);
   display: flex;
   align-items: center;
   gap: 80px;
@@ -843,6 +848,7 @@ main {
     gap: 48px;
     padding: 0 32px;
     margin: 0;
+    padding-right: 0; /* reset on mobile */
   }
 
   .sectionEightContent {
