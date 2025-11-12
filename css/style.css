@@ -716,9 +716,8 @@ main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 clamp(32px, 8%, 120px);
-  /* Reserve space on the right for the video so text doesn't overlap */
-  /* Video is 650px wide + spacing, so we need padding-right to keep content area separate */
-  padding-right: clamp(750px, 60vw, 850px);
+  /* Reserve space on the right for the video so text doesn't flow underneath */
+  padding-right: clamp(320px, 45vw, 700px);
   display: flex;
   align-items: center;
   gap: 80px;
@@ -773,15 +772,11 @@ main {
   line-height: 1.5;
 }
 
-/* Video container positioned like sectionFive laptop but with spacing from edge */
+/* Video container positioned like sectionFive laptop */
 .sectionEightVideo {
-  position: absolute;
-  right: clamp(32px, 8%, 120px);
-  top: 50%;
   transform: translateY(-50%);
   width: 650px;
   max-width: min(45vw, 650px);
-  max-height: 80vh;
   z-index: 1;
 }
 
@@ -874,6 +869,167 @@ main {
 
   .sectionEight {
     margin-bottom: 100px;
+  }
+}
+
+/* ============================================
+   Section Nine
+   ============================================ */
+
+.sectionNine {
+  padding: 100px 0;
+  background-color: #010725;
+}
+
+.sectionNineContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(32px, 8%, 120px);
+}
+
+.sectionNineHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.sectionNineTitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sectionNineDescription {
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #010d50;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(3, 40, 238, 0.18);
+}
+
+.productContainer > img:first-of-type {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.productContainer > p:first-of-type {
+  color: white;
+  background-color: #0328ee;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+
+.productContainer h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.productContainer p {
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  flex: 1;
+}
+
+.articleAuthor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.articleProfile {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.authorInfo h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.authorInfo h6 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #aab0d4;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.article-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #1a203b;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.article-btn:hover,
+.article-btn:active {
+  background-color: #0328ee;
+}
+
+@media (max-width: 968px) {
+  .articlesContainer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sectionNineHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .sectionNineTitle {
+    white-space: normal;
   }
 }
 
