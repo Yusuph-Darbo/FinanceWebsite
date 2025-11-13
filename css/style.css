@@ -1110,23 +1110,6 @@ main {
   color: #e6e8ff;
 }
 
-.download-card button {
-  align-self: flex-start;
-  background-color: #1a203b;
-  padding: 14px 28px;
-  border-radius: 50px;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.download-card button:hover,
-.download-card button:active {
-  background-color: #0328ee;
-}
-
 .download-card img {
   width: 90%;
   max-width: 320px;
