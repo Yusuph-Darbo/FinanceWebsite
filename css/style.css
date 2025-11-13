@@ -91,12 +91,45 @@ header {
   background-color: #010725;
   margin-bottom: 0;
   position: relative;
-  z-index: 2;
+  z-index: 100;
 }
 
 .logo {
   margin-left: 50px;
 }
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 101;
+  position: relative;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* .menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+} */
 
 .header-links {
   border-left: 1px solid #010d50;
@@ -142,6 +175,87 @@ header {
 .header-links .download-btn {
   margin-left: auto;
   margin-right: 0;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 968px) {
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .header-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #010725;
+    border-left: 1px solid #010d50;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 30px 30px;
+    transition: right 0.3s ease;
+    z-index: 100;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .header-links.active {
+    right: 0;
+  }
+
+  .header-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .header-links li {
+    width: 100%;
+  }
+
+  .header-links li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .header-links .download-btn {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Overlay when menu is open */
+  body.menu-open::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* ============================================
