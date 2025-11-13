@@ -1,4 +1,63 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Mobile Menu Toggle
+  const menuToggle = document.querySelector(".menu-toggle");
+  const headerLinks = document.querySelector(".header-links");
+  const body = document.body;
+
+  if (menuToggle && headerLinks) {
+    menuToggle.addEventListener("click", function () {
+      const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+      
+      menuToggle.setAttribute("aria-expanded", !isExpanded);
+      headerLinks.classList.toggle("active");
+      body.classList.toggle("menu-open");
+
+      // Prevent body scroll when menu is open
+      if (!isExpanded) {
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "";
+      }
+    });
+
+    // Close menu when clicking on a link or button
+    const menuLinks = headerLinks.querySelectorAll("a");
+    const downloadBtn = headerLinks.querySelector(".download-btn");
+    
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        menuToggle.setAttribute("aria-expanded", "false");
+        headerLinks.classList.remove("active");
+        body.classList.remove("menu-open");
+        body.style.overflow = "";
+      });
+    });
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener("click", function () {
+        menuToggle.setAttribute("aria-expanded", "false");
+        headerLinks.classList.remove("active");
+        body.classList.remove("menu-open");
+        body.style.overflow = "";
+      });
+    }
+
+    // Close menu when clicking outside (on overlay)
+    document.addEventListener("click", function (e) {
+      if (
+        body.classList.contains("menu-open") &&
+        !headerLinks.contains(e.target) &&
+        !menuToggle.contains(e.target)
+      ) {
+        menuToggle.setAttribute("aria-expanded", "false");
+        headerLinks.classList.remove("active");
+        body.classList.remove("menu-open");
+        body.style.overflow = "";
+      }
+    });
+  }
+
+  // Testimonial Slider
   const slider = document.querySelector(".testimonial-slider");
   const slides = Array.from(document.querySelectorAll(".testimonial"));
   const nav = document.querySelector(".testimonial-nav");
