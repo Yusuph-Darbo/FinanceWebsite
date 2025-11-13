@@ -783,6 +783,9 @@ main {
 
 /* Video container positioned like sectionFive laptop */
 .sectionEightVideo {
+  position: absolute;
+  right: 0;
+  top: 50%;
   transform: translateY(-50%);
   width: 650px;
   max-width: min(45vw, 650px);
@@ -1276,7 +1279,7 @@ footer {
 
 .footerDownload {
   flex: 1;
-  background-color: #1a203b;
+  background-color: #1b2662;
   border-radius: 24px;
   padding: 32px;
   max-width: 500px;
