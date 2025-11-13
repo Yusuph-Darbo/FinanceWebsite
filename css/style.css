@@ -1130,6 +1130,11 @@ main {
   max-width: 340px;
 }
 
+.fa-brands {
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+
 @media (max-width: 968px) {
   .downloadCards {
     flex-direction: column;
