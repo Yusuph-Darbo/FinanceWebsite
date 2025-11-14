@@ -22,13 +22,49 @@ h2 {
   margin: 0 40px 0 15px;
 }
 
-h1,
-h2,
-p,
-a,
-button {
-  position: relative;
-  z-index: 2; /* ensures they stay above the circle */
+/* ============================================
+   Buttons - Shared Styles
+   ============================================ */
+
+.download-btn,
+.pricing-btn,
+.article-btn {
+  padding: 15px 22px;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn {
+  background-color: #0328ee;
+  margin-right: 20px;
+}
+
+.download-btn:hover,
+.download-btn:active {
+  background-color: #031fb4;
+}
+
+.pricing-btn,
+.article-btn {
+  background-color: #1a203b;
+}
+
+.pricing-btn:hover,
+.pricing-btn:active,
+.article-btn:hover,
+.article-btn:active {
+  background-color: #0328ee;
+}
+
+.article-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-size: 1rem;
 }
 
 /* ============================================
@@ -1335,7 +1371,7 @@ main {
 .sectionTenDescription {
   margin: 0;
   line-height: 1.6;
-  color: #e6e8ff;
+  color: white;
 }
 
 .downloadCards {
