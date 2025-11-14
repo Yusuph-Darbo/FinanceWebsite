@@ -464,6 +464,65 @@ main {
   padding: 30px 60px;
 }
 
+@media (max-width: 968px) {
+  .sectionThree {
+    padding: 60px 0;
+  }
+
+  .sectionThreeContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .sectionThreeContainer > p {
+    font-size: 0.95rem;
+  }
+
+  .section-three-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Reset all manual grid placements */
+  .section-three-container .feature-box {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    text-align: left;
+  }
+
+  /* Phone box styling on mobile */
+  #phone-box {
+    text-align: center;
+    padding: 28px 20px;
+  }
+
+  #phone-box img {
+    width: 80%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  /* Reduce paddings on feature boxes */
+  .section-three-container .feature-box {
+    padding: 28px;
+  }
+
+  /* Text adjustments */
+  .section-three-container .feature-box h3 {
+    font-size: 1rem;
+  }
+
+  .section-three-container .feature-box p {
+    font-size: 0.95rem;
+  }
+
+  /* Button responsive */
+  #section3Download-btn {
+    width: 100%;
+    padding: 22px;
+    font-size: 1rem;
+  }
+}
+
 /* ============================================
    Section Four
    ============================================ */
