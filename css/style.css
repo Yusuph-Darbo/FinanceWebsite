@@ -612,11 +612,11 @@ main {
 
   .sectionFour-content {
     order: 2;
-    text-align: center;
+    text-align: left;
   }
 
   .sectionFour-list-item {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -738,11 +738,11 @@ main {
 
   .sectionFive-content {
     order: 1;
-    text-align: center;
+    text-align: left;
   }
 
   .sectionFive-list-item {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .sectionFive .laptop {
@@ -789,6 +789,32 @@ main {
 #section6Download-btn:active {
   background-color: #031fb4;
   color: #ffffff;
+}
+
+@media (max-width: 968px) {
+  .sectionSix {
+    flex-direction: column; /* stack content */
+    text-align: left; /* keep content clean on mobile */
+    padding: 60px 32px; /* mobile-friendly padding */
+    gap: 40px; /* space between text + image */
+  }
+
+  .sectionSixContainer {
+    max-width: 100%;
+  }
+
+  .phones img {
+    width: 90%; /* scale down for mobile */
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto; /* center image */
+    display: block;
+  }
+
+  #section6Download-btn {
+    width: 100%; /* full button width on mobile */
+    padding: 16px 0;
+  }
 }
 
 /* ============================================
