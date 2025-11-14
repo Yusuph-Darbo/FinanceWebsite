@@ -462,17 +462,6 @@ main {
   align-items: stretch;
 }
 
-.section-three-container .feature-box {
-  background: #010d50;
-  border-radius: 40px;
-  padding: 36px;
-  text-align: left;
-  box-shadow: 0 20px 50px rgba(3, 40, 238, 0.18);
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
 .section-three-container .feature-box img {
   width: 56px;
   height: 56px;
@@ -559,6 +548,7 @@ main {
     grid-column: auto !important;
     grid-row: auto !important;
     text-align: left;
+    padding: 28px;
   }
 
   /* Phone box styling on mobile */
@@ -571,11 +561,6 @@ main {
     width: 80%;
     max-width: 340px;
     margin: 0 auto;
-  }
-
-  /* Reduce paddings on feature boxes */
-  .section-three-container .feature-box {
-    padding: 28px;
   }
 
   /* Text adjustments */
@@ -596,13 +581,93 @@ main {
 }
 
 /* ============================================
-   Section Four
+   Content Sections - Shared Styles
    ============================================ */
 
-.sectionFour {
+.sectionFour,
+.sectionFive,
+.sectionEight,
+.sectionNine,
+.sectionTen {
   padding: 100px 0;
   background-color: #010725;
 }
+
+.sectionFour-content,
+.sectionFive-content,
+.sectionEightContent {
+  flex: 1;
+}
+
+.sectionFour-content h2,
+.sectionFive-content h2,
+.sectionEightContent h2,
+.sectionNineTitle,
+.sectionTenTitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sectionFour-content h2,
+.sectionFive-content h2,
+.sectionEightContent h2 {
+  margin-bottom: 20px;
+}
+
+.sectionNineTitle,
+.sectionTenTitle {
+  margin: 0;
+}
+
+.sectionFour-description,
+.sectionFive-description,
+.sectionEightContent p {
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.sectionFour-list,
+.sectionFive-list,
+.sectionEightContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionFour-list-item,
+.sectionFive-list-item,
+.sectionEightContent li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sectionFour-list-item img,
+.sectionFive-list-item img,
+.sectionEightContent li img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sectionFour-list-item p,
+.sectionFive-list-item p,
+.sectionEightContent li p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ============================================
+   Section Four
+   ============================================ */
 
 .sectionFourContainer {
   max-width: 1200px;
@@ -624,52 +689,6 @@ main {
   width: 100%;
   max-width: 500px;
   height: auto;
-}
-
-.sectionFour-content {
-  flex: 1;
-}
-
-.sectionFour-content h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.sectionFour-description {
-  line-height: 1.6;
-  margin-bottom: 40px;
-  font-size: 1.1rem;
-}
-
-.sectionFour-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.sectionFour-list-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.sectionFour-list-item img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.sectionFour-list-item p {
-  margin: 0;
-  color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 @media (max-width: 968px) {
@@ -704,7 +723,8 @@ main {
   margin-bottom: 350px;
 }
 
-.sectionFiveContainer {
+.sectionFiveContainer,
+.sectionEightContainer {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 clamp(32px, 8%, 120px);
@@ -718,23 +738,6 @@ main {
   box-sizing: border-box;
 }
 
-.sectionFive-content {
-  flex: 1;
-}
-
-.sectionFive-content h2 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.sectionFive-description {
-  line-height: 1.6;
-  margin-bottom: 40px;
-  font-size: 1.1rem;
-}
-
 .sectionFive-image {
   flex: 1;
   display: flex;
@@ -744,46 +747,6 @@ main {
   right: 0;
   top: 50%;
   width: auto;
-}
-
-.sectionFive-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.sectionFive-list-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.sectionFive-list-item img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.sectionFive-list-item p {
-  margin: 0;
-  color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.sectionFive .laptop {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 650px;
-  max-width: min(45vw, 650px);
-  max-height: 80vh;
-  z-index: 1;
 }
 
 @media (min-width: 1600px) {
