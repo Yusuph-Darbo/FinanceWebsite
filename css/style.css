@@ -2,6 +2,10 @@
    Base Styles
    ============================================ */
 
+* {
+  outline: 1px solid red !important;
+}
+
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
@@ -297,8 +301,8 @@ main {
   .hero-section {
     flex-direction: column;
     text-align: left;
-    padding: 0 32px;
-    margin: 60px 0;
+    padding: 0;
+    margin: 40px 0;
     gap: 40px;
   }
 
@@ -325,15 +329,15 @@ main {
   }
 
   .laptop {
-    width: 100%; /* let image scale */
-    max-width: 420px; /* control size on smaller screens */
+    width: 40px;
+    max-width: 420px;
+    flex-shrink: 1; /* allows shrinking */
     margin: 0 auto;
   }
 
   .laptop img {
     width: 100%;
     height: auto;
-    display: block;
   }
 }
 
