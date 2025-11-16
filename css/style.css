@@ -67,6 +67,14 @@ h2 {
   font-size: 1rem;
 }
 
+@media (max-width: 968px) {
+  .download-btn,
+  .pricing-btn,
+  .article-btn {
+    font-size: 1.2rem;
+  }
+}
+
 /* ============================================
    Header
    ============================================ */
@@ -268,7 +276,7 @@ main {
   margin-right: 0;
 }
 
-.laptop img .sectionFive .laptop img {
+.laptop img {
   width: 100%;
   height: auto;
   display: block;
@@ -312,13 +320,20 @@ main {
 
   .text-section-hero button {
     width: 95%; /* full-width buttons on mobile */
-    margin: 10px auto;
+    margin: 12px auto;
     display: block;
   }
 
   .laptop {
     width: 100%; /* let image scale */
     max-width: 420px; /* control size on smaller screens */
+    margin: 0 auto;
+  }
+
+  .laptop img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -1260,10 +1275,6 @@ main {
   max-width: 340px;
 }
 
-.android-card img {
-  max-width: 340px;
-}
-
 .fa-brands {
   margin-right: 5px;
   font-size: 1.3rem;
@@ -1282,12 +1293,6 @@ main {
 
   .download-card button {
     align-self: center;
-  }
-
-  .download-btn {
-    width: 100%;
-    padding: 16px 0;
-    font-size: 1.2rem;
   }
 }
 
