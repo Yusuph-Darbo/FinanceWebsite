@@ -309,6 +309,7 @@ main {
   .text-section-hero h1 {
     font-size: 2rem;
     line-height: 1.3;
+    margin-left: 1.15em;
   }
 
   .text-section-hero p {
@@ -384,6 +385,7 @@ main {
     gap: 32px 24px;
     max-width: 500px;
     margin: 2rem auto 0;
+    justify-items: center;
   }
 
   .sectionTwo ul li {
@@ -569,7 +571,7 @@ main {
   /* Phone box styling on mobile */
   #phone-box {
     text-align: center;
-    padding: 28px 20px;
+    padding: 28px 20px 0;
   }
 
   #phone-box img {
@@ -808,7 +810,7 @@ main {
   }
 
   .sectionFive {
-    margin-bottom: 100px;
+    margin-bottom: 0;
   }
 }
 
@@ -848,6 +850,7 @@ main {
     text-align: center;
     padding: 60px 32px;
     gap: 40px;
+    margin-top: 0;
   }
 
   .sectionSixContainer {
@@ -972,7 +975,21 @@ main {
 }
 
 @media (max-width: 640px) {
+  .testimonial-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 0 12px;
+    scrollbar-width: none; /* hide scrollbar for Firefox */
+  }
+
+  .testimonial-nav::-webkit-scrollbar {
+    display: none; /* hide scrollbar for Chrome/Safari */
+  }
+
   .testimonial-nav .nav-btn img {
+    flex-shrink: 0; /* prevent images from shrinking */
     width: 48px;
     height: 48px;
   }
