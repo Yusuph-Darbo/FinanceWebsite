@@ -2,10 +2,6 @@
    Base Styles
    ============================================ */
 
-* {
-  outline: 1px solid red !important;
-}
-
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
@@ -329,7 +325,7 @@ main {
   }
 
   .laptop {
-    width: 40px;
+    width: 100%;
     max-width: 420px;
     flex-shrink: 1; /* allows shrinking */
     margin: 0 auto;
@@ -793,6 +789,7 @@ main {
   .sectionFive-content {
     order: 1;
     text-align: left;
+    margin-bottom: 30px;
   }
 
   .sectionFive-list-item {
@@ -876,7 +873,7 @@ main {
    ============================================ */
 
 .sectionSeven {
-  display: flex;
+  display: block;
 }
 
 .sectionSevenContainer {
@@ -1216,6 +1213,11 @@ main {
 
   .sectionNineTitle {
     white-space: normal;
+    font-size: 2rem;
+  }
+
+  .sectionNineContainer {
+    padding: 0 32px;
   }
 
   .article-btn {
