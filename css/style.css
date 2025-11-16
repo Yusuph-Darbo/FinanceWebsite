@@ -163,6 +163,12 @@ header {
   margin-right: 0;
 }
 
+.header-links li a.active {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 4px;
+}
+
 /* Mobile Menu Styles */
 @media (max-width: 968px) {
   .menu-toggle {
