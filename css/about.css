@@ -17,6 +17,25 @@
    Section Two
    ============================================ */
 
+.sectionTwo {
+  text-align: center;
+  padding: 0 6.25em;
+}
+
+.sectionTwoIntro {
+  display: flex;
+  align-items: center;
+  gap: 16.8rem; /* space between the h2 and p */
+}
+
+.sectionTwoIntro h2 {
+  white-space: nowrap; /* keeps the heading on one line */
+}
+
+.sectionTwoContainer {
+  font-size: 1.4rem;
+}
+
 .sectionTwo .section-three-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
