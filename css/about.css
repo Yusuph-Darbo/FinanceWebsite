@@ -105,3 +105,32 @@
   margin-right: 0;
   display: block;
 }
+
+/* ============================================
+   Section Four
+   ============================================ */
+
+.sectionFourContainer {
+  align-items: flex-start;
+  line-height: 1.7;
+}
+
+.sectionFourLeftSide {
+  padding-top: 53px;
+  margin-right: 6em;
+}
+
+.sectionFourLeftSide h2 {
+  margin-left: 0;
+  font-size: 2.8rem;
+}
+
+.sectionFour li {
+  border-bottom: 1px solid white;
+  margin-bottom: 2em;
+}
+
+ul li::marker {
+  font-size: 5rem;
+  color: white;
+}
