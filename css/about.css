@@ -113,6 +113,9 @@
 .sectionFourContainer {
   align-items: flex-start;
   line-height: 1.7;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sectionFourLeftSide {
@@ -121,13 +124,36 @@
 }
 
 .sectionFourLeftSide h2 {
-  margin-left: 0;
-  font-size: 2.8rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sectionFourLeftSide p {
+  line-height: 1.6;
+}
+
+.sectionFourRightSide h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.sectionFourRightSide h4 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin: 0.4rem 0 0.6rem;
+  font-weight: 700;
+}
+
+.sectionFourRightSide ul {
+  padding: 0;
+  margin: 0;
 }
 
 .sectionFour li {
+  padding-left: 30px; /* space for bullet */
+  margin-bottom: 3rem;
   border-bottom: 1px solid white;
-  margin-bottom: 2em;
+  padding-bottom: 2rem;
 }
 
 ul li::marker {
