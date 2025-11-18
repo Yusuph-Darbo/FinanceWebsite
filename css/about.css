@@ -70,6 +70,8 @@
 
 .sectionThree {
   padding: 100px 0;
+  border: 1px solid white;
+  text-align: left;
 }
 
 .sectionThree .section-three-container {
@@ -79,27 +81,26 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 0 0 clamp(32px, 8%, 120px);
+  flex: 1;
+  flex-direction: column;
 }
 
-.sectionThree .section-three-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.sectionThreetext {
+  width: 50%;
 }
 
 .sectionThree .section-three-container h2 {
   font-size: 2.4rem;
-  margin: 0 0 12px 0;
+  margin: 2em 0 0.75em 0;
 }
 
 .sectionThree .section-three-container p {
   line-height: 1.6;
-  margin: 0 0 20px 0;
+  margin-bottom: 2em;
 }
 
-.sectionThree .section-three-container img {
-  width: auto;
+.planet {
+  width: 50%;
   max-width: 650px;
   height: auto;
   margin-right: 0;
