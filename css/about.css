@@ -178,7 +178,6 @@ ul li::marker {
 }
 
 .teamContainer {
-  margin-bottom: 60px;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -218,5 +217,81 @@ ul li::marker {
 
   .sectionFiveContainer {
     padding: 0 32px;
+  }
+}
+
+/* ============================================
+   Section Six 
+   ============================================ */
+
+.sectionSix {
+  margin-top: 0;
+}
+
+.investors-section {
+  text-align: center;
+  padding: 0 0 80px;
+  background-color: #010725;
+}
+
+.sectionSixContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.investors-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.investors-section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.investors-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.4rem;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.investors-section li {
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 968px) {
+  .investors-section {
+    padding: 60px 32px;
+  }
+
+  .investors-section ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 24px;
+    max-width: 500px;
+    margin: 2rem auto 0;
+    justify-items: center;
+  }
+
+  .investors-section ul li {
+    flex-direction: row;
+    gap: 12px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .investors-section ul li:last-child {
+    grid-column: 1 / -1;
+    justify-content: center;
   }
 }
