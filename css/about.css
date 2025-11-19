@@ -160,3 +160,63 @@ ul li::marker {
   font-size: 5rem;
   color: white;
 }
+
+/* ============================================
+   Section Five 
+   ============================================ */
+
+.sectionFiveContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(32px, 8%, 120px);
+}
+
+.teamContainer,
+.sectionFiveHeader {
+  display: flex;
+  gap: 40px;
+}
+
+.teamContainer {
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sectionFiveHeader {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionFiveTitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.teamContainer .sectionFiveDescription {
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: 60%;
+}
+
+@media (max-width: 968px) {
+  .sectionFiveHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .sectionFiveTitle {
+    white-space: normal;
+    font-size: 2rem;
+  }
+
+  .sectionFiveContainer {
+    padding: 0 32px;
+  }
+}
