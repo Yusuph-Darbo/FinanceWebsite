@@ -62,6 +62,15 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
+  .sectionTwoIntro {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sectionTwo {
+    margin-top: 0;
+  }
 }
 
 /* ============================================
@@ -104,6 +113,43 @@
   height: auto;
   margin-right: 0;
   display: block;
+}
+
+@media (max-width: 968px) {
+  .sectionThree {
+    padding: 60px 0;
+  }
+
+  .sectionThree .section-three-container {
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 40px;
+  }
+
+  .sectionThreetext {
+    width: 100%;
+    order: 1;
+  }
+
+  .planet {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    order: 2;
+  }
+
+  .sectionThree .section-three-container h2 {
+    font-size: 2rem;
+    margin: 1.5em 0 0.5em 0;
+  }
+
+  .sectionThree .section-three-container h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .planet {
+    width: 100%;
+  }
 }
 
 /* ============================================
