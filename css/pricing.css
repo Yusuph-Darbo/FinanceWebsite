@@ -63,3 +63,88 @@
   font-weight: 600;
   color: #ffffff;
 }
+
+.pricingBoxesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.pricingBox {
+  background: #010d50;
+  border-radius: 32px;
+  padding: 40px 36px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pricingBox > p:first-child {
+  background: #0328ee;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 8px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 24px 0;
+}
+
+.pricingBox h2 {
+  font-size: 2.8rem;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.pricingBox > p:nth-of-type(2) {
+  line-height: 1.6;
+  color: #e6e8ff;
+  margin: 0 0 32px 0;
+  font-size: 0.95rem;
+}
+
+.pricingBox h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+
+.pricingBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  flex: 1;
+}
+
+.pricingBox ul li {
+  padding-left: 28px;
+  margin-bottom: 16px;
+  position: relative;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.pricingBox ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0328ee;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.pricingBox .download-btn {
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  font-size: 0.9rem;
+}
