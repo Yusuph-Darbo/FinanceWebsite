@@ -146,10 +146,6 @@
   .sectionThree .section-three-container h2:first-of-type {
     margin-top: 0;
   }
-
-  .planet {
-    width: 100%;
-  }
 }
 
 /* ============================================
@@ -247,6 +243,10 @@ ul li::marker {
   line-height: 1.6;
   font-size: 1.1rem;
   max-width: 60%;
+}
+
+.sectionFive.teamSection {
+  margin-bottom: 0;
 }
 
 @media (max-width: 968px) {
