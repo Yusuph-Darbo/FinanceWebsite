@@ -1,0 +1,12 @@
+/* ============================================
+   Main Content
+   ============================================ */
+
+.hero-section {
+  text-align: center;
+  padding: 80px 8% 60px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
