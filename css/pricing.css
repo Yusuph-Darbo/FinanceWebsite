@@ -31,7 +31,7 @@
 .sectionIcons {
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 3em auto 0;
 }
 
 .sectionIcons > ul {
@@ -46,7 +46,6 @@
 
 .sectionIcons > ul li {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 12px;
 }
@@ -58,7 +57,7 @@
 }
 
 .sectionIcons > ul li p {
-  margin: 0;
+  margin: 0 0 0 1em;
   font-size: 0.9rem;
   font-weight: 600;
   color: #ffffff;
@@ -166,6 +165,10 @@
   .sectionIcons > ul {
     gap: 40px;
     margin-bottom: 40px;
+  }
+
+  .sectionIcons ul {
+    flex-direction: column;
   }
 
   .sectionIcons > ul li img.icon {
