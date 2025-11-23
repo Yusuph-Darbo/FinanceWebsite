@@ -52,8 +52,12 @@
   width: 56px;
   height: 56px;
   object-fit: contain;
-  align-items: start;
+  align-self: flex-start;
+}
+
+.sectionTwo .feature-box:nth-of-type(3) {
   text-align: left;
+  align-items: flex-start;
 }
 
 /* Mobile responsive */
