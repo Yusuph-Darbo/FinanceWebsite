@@ -273,8 +273,9 @@ ul li::marker {
 @media (max-width: 968px) {
   .sectionFiveHeader {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
+    /* text-align: center; */
   }
 
   .sectionFiveTitle {
