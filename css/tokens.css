@@ -33,5 +33,75 @@
   align-items: center;
   gap: 24px;
   padding: 32px 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #1a203b;
+}
+
+/* Header Row */
+.tokenSection li:first-child {
+  padding: 20px 40px;
+}
+
+.tokenSection li:first-child h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Token Name Column */
+.tokenSection li:not(:first-child) {
+  position: relative;
+}
+
+tokenSection img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 40px;
+}
+
+.tokenSection h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 64px;
+}
+
+.tokenSection h4 span {
+  display: inline-block;
+  background-color: #0328ee;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-left: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Description Column */
+.tokenSection p {
+  font-size: 0.95rem;
+  color: #e6e8ff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Market Cap and Volume Columns */
+.tokenSection li:not(:first-child) p {
+  font-weight: 500;
+}
+
+/* Website Column */
+.tokenSection a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
