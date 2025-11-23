@@ -9,6 +9,9 @@ A modern, responsive **finance and crypto portfolio** website built with **HTML,
 
 👉 [Visit Yusuph Finance](https://yusuph-finance.netlify.app/)
 
+👉 [Figma File Inspiration](https://shorturl.at/SG0Vt)
+
+
 ---
 
 ### Features
