@@ -51,8 +51,6 @@
 .section-three-container .feature-box:nth-of-type(3) img {
   width: 56px;
   height: 56px;
-  object-fit: contain;
-  align-self: flex-start;
 }
 
 .sectionTwo .feature-box:nth-of-type(3) {
@@ -137,7 +135,6 @@
 
   .planet {
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
     order: 2;
   }
@@ -205,6 +202,26 @@
 ul li::marker {
   font-size: 5rem;
   color: white;
+}
+@media (max-width: 968px) {
+  .sectionFourContainer {
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 2rem;
+  }
+
+  .sectionFourLeftSide {
+    padding-top: 0;
+    margin-right: 0;
+  }
+
+  .sectionFourRightSide ul {
+    padding-left: 20px;
+  }
+
+  .sectionFour li {
+    padding-left: 10px;
+  }
 }
 
 /* ============================================
