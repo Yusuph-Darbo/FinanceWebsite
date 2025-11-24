@@ -116,4 +116,31 @@ document.addEventListener("DOMContentLoaded", function () {
   showSlide(0);
 });
 
+async function loadTokenData() {
+  const response = await fetch(
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,litecoin,tron"
+  );
 
+  const data = await response.json();
+
+  data.forEach(coin => {
+    const idMap = {
+      bitcoin: "btc-card",
+      ethereum: "eth-card",
+      litecoin: "ltc-card",
+      tron: "trx-card"
+    };
+
+    const card = document.getElementById(idMap[coin.id]);
+
+    card.querySelector(".market-cap").textContent =
+      "$" + Number(coin.market_cap).toLocaleString();
+
+    card.querySelector(".volume").textContent =
+      "$" + Number(coin.total_volume).toLocaleString();
+
+    card.querySelector(".website").href = coin.homepage ? coin.homepage : "#";
+  });
+}
+
+loadTokenData();
