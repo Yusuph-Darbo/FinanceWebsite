@@ -43,3 +43,28 @@ form label {
   margin-bottom: 8px;
   display: block;
 }
+
+#text,
+#email,
+form textarea {
+  background-color: #010d50;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 28px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+}
+
+#text::placeholder,
+#email::placeholder,
+form textarea::placeholder {
+  color: #6e7183;
+}
+
+#text:focus,
+#email:focus,
+form textarea::focus {
+  background-color: #011157;
+}
