@@ -12,3 +12,34 @@ h1 {
   margin: 0 0 60px 0;
   color: #ffffff;
 }
+
+/* ============================================
+   Form Section Layout
+   ============================================ */
+
+.formSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   Form Styling
+   ============================================ */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  margin-bottom: 8px;
+  display: block;
+}
