@@ -68,3 +68,44 @@ form textarea::placeholder {
 form textarea::focus {
   background-color: #011157;
 }
+
+/* Message field */
+#message {
+  border-radius: 32px;
+  min-height: 200px;
+  resize: none;
+  padding: 24px 28px;
+}
+
+/* ============================================
+   Contact Info Section
+   ============================================ */
+
+.linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.linkSection h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.linkSection > p {
+  color: #e6e8ff;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+  font-size: 1rem;
+}
+
+.linkSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
