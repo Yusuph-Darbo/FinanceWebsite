@@ -115,10 +115,10 @@ label[for="message"] {
 /* ============================================
    FAQ Section
    ============================================ */
-
-.faq-container {
-  max-width: 1000px;
-  margin: 0 auto;
+.faq-section {
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto 100px;
 }
 
 .faq-header {
@@ -139,10 +139,9 @@ label[for="message"] {
 }
 
 .faq-item {
-  border-radius: 16px;
-  margin-bottom: 16px;
   overflow: hidden;
   transition: all 0.3s ease;
+  border-bottom: 1px solid #343951;
 }
 
 .faq-question {
