@@ -41,3 +41,21 @@ textarea {
   font-family: "DM Sans", sans-serif;
   outline: none;
 }
+
+#name::placeholder,
+#email::placeholder,
+#company::placeholder,
+#subject::placeholder,
+form textarea::placeholder {
+  color: white;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.linkSection {
+  width: 50%;
+}
