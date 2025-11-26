@@ -3,19 +3,20 @@
    ============================================ */
 
 .hero-section {
-  padding: 80px 8% 100px;
+  padding: 0 8% 100px;
   display: flex;
   flex-direction: row;
 }
 
 h1 {
-  padding: 0 8%;
+  padding: 0 9%;
 }
 
 .formSection form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  width: 550px;
 }
 
 .form-group {
@@ -56,6 +57,57 @@ textarea {
   border-radius: 10px;
 }
 
+label[for="name"],
+label[for="email"],
+label[for="company"],
+label[for="subject"],
+label[for="message"] {
+  margin: 0 0 5px 15px;
+}
+
 .linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   width: 50%;
+}
+
+.linkSection h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.linkSection > p {
+  color: white;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+  font-size: 1rem;
+}
+
+.linkSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linkSection ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.linkSection ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+.linkSection ul li p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
 }
