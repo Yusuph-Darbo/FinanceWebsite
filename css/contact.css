@@ -175,3 +175,44 @@ label[for="message"] {
   flex-shrink: 0;
   margin-left: 24px;
 }
+
+.faq-icon::before,
+.faq-icon::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon::before {
+  width: 20px;
+  height: 2px;
+}
+
+.faq-icon::after {
+  width: 2px;
+  height: 20px;
+}
+
+.faq-item.active .faq-icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 40px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 40px 32px 40px;
+}
+
+.faq-answer p {
+  color: white;
+  line-height: 1.8;
+  font-size: 1rem;
+}
