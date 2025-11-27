@@ -109,6 +109,7 @@
 @media (max-width: 968px) {
   .hero-section {
     padding: 60px 32px 40px;
+    text-align: left;
   }
 
   .hero-section h1 {
@@ -132,9 +133,7 @@
   /* Card-based layout for mobile */
   .tokenSection li:not(:first-child) {
     display: block;
-    border-radius: 24px;
     padding: 24px;
-    border: none;
     margin-bottom: 16px;
     position: relative;
   }
@@ -154,5 +153,74 @@
     display: inline-block;
     font-size: 1.25rem;
     vertical-align: middle;
+  }
+
+  .tokenSection span {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  /* Description */
+  .tokenSection .desc {
+    margin: 16px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid #1a203b;
+  }
+
+  /* Data grid for market cap and volume */
+  .tokenSection .market-cap,
+  .tokenSection .volume {
+    display: block;
+    margin: 8px 0;
+  }
+  .tokenSection .desc,
+  .tokenSection .market-cap,
+  .tokenSection .volume {
+    border-bottom: 1px solid #1a203b;
+    padding: 20px 0;
+  }
+
+  .tokenSection li::before,
+  .tokenSection .desc::before,
+  .tokenSection .market-cap::before,
+  .tokenSection .volume::before,
+  .tokenSection .website::before {
+    white-space: pre;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: white;
+    margin-bottom: 8px;
+  }
+
+  .tokenSection li::before {
+    content: "NAME\A";
+  }
+
+  .tokenSection .desc::before {
+    content: "DESCRIPTION\A";
+  }
+
+  .tokenSection .market-cap::before {
+    content: "MARKET CAP\A";
+  }
+
+  .tokenSection .volume::before {
+    content: "VOLUME\A";
+  }
+
+  .tokenSection .website::before {
+    content: "WEBSITE\A";
+  }
+
+  /* Website link */
+  .tokenSection .website {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.9rem;
   }
 }
