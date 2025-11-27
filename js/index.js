@@ -148,13 +148,13 @@ loadTokenData();
 // Contact Page Logic
 const faqItems = document.querySelectorAll('.faq-item');
 
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
             
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
                 
-                // Toggle current item
-                item.classList.toggle('active');
-            });
-        });
+      // Toggle current item
+      item.classList.toggle('active');
+    });
+});

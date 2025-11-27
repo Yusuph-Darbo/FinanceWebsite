@@ -123,4 +123,36 @@
   .tokenSection {
     margin-top: 40px;
   }
+
+  /* Hide the header row on mobile */
+  .tokenSection li:first-child {
+    display: none;
+  }
+
+  /* Card-based layout for mobile */
+  .tokenSection li:not(:first-child) {
+    display: block;
+    border-radius: 24px;
+    padding: 24px;
+    border: none;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  /* Image and title row */
+  .tokenSection img {
+    position: static;
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+
+  .tokenSection h4 {
+    padding-left: 0;
+    display: inline-block;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
 }
