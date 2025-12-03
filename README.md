@@ -1,32 +1,40 @@
-
 ## FinanceFlow
 
-A modern, responsive **finance and crypto portfolio** website built with **HTML, CSS, and JavaScript**, designed to showcase portfolio management features, secure transactions, and a clean user experience.
+A modern, responsive **finance and crypto portfolio** website built with **HTML, CSS, JavaScript**, and **RESTful APIs**.
+Designed to display live market data, interactive portfolio features, and a clean user experience.
 
 ---
 
 ### Live Demo
 
-👉 [Visit Yusuph Finance](https://yusuph-finance.netlify.app/)
-
-👉 [Figma File Inspiration](https://shorturl.at/SG0Vt)
-
+👉 **Live Website:** [https://yusuph-finance.netlify.app/](https://yusuph-finance.netlify.app/)
+👉 **Figma Inspiration:** [https://shorturl.at/SG0Vt](https://shorturl.at/SG0Vt)
 
 ---
 
 ### Features
 
-* **Responsive Design:** Optimized for desktop, tablet, and mobile screens.
-* **Modern UI:** Smooth layout with gradient accents, animations, and visuals.
-* **Informative Sections:** Includes sections for features, portfolio management, and benefits.
-* **Interactive Elements:** Buttons, hover effects, and animations enhance engagement.
-* **Fast and Lightweight:** Pure HTML/CSS/JS implementation.
+* **Real-Time Data (REST APIs):**
+  Fetches live cryptocurrency prices and financial statistics from public APIs.
+
+* **Responsive Design:**
+  Fully optimized for desktops, tablets, and mobile devices.
+
+* **Modern UI/UX:**
+  Smooth layout, clean typography, gradients, simple animations, and intuitive navigation.
+
+* **Interactive Components:**
+  Live price updates, hover effects, scroll animations, and dynamic content rendering.
+
+* **Fast & Lightweight:**
+  Pure HTML, CSS, and vanilla JavaScript with API integration.
 
 ---
 
 ### Built With
 
-* **HTML5** – Semantic and accessible structure
-* **CSS3** – Flexbox, grid, animations, and media queries
-* **JavaScript (ES6)** – Basic interactivity and DOM manipulation
-* **Netlify** – For hosting and continuous deployment
+* **HTML5** – Semantic, accessible, and SEO-friendly structure
+* **CSS3** – Grid, flexbox, responsive design, gradients & animations
+* **JavaScript (ES6)** – Fetch API, async programming, DOM manipulation
+* **RESTful APIs** – Live crypto / finance data integration
+* **Netlify** – Hosting and continuous deployment
