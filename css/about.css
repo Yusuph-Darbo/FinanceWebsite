@@ -60,6 +60,11 @@
 
 /* Mobile responsive */
 @media (max-width: 968px) {
+  .sectionTwo {
+    margin-top: 0;
+    padding: 0 32px;
+  }
+
   .sectionTwo .section-three-container {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -68,10 +73,11 @@
   .sectionTwoIntro {
     flex-direction: column;
     gap: 1rem;
+    align-items: flex-start;
   }
 
-  .sectionTwo {
-    margin-top: 0;
+  .sectionTwoIntro h2 {
+    white-space: normal;
   }
 }
 
