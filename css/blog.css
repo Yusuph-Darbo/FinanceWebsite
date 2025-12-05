@@ -1,0 +1,14 @@
+/* ============================================
+   Main Content
+   ============================================ */
+
+.hero-section {
+  text-align: center;
+  padding: 80px 8% 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  border-radius: 8px;
+}
