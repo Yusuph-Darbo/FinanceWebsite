@@ -2,13 +2,24 @@
    Main Content
    ============================================ */
 
-.hero-section {
-  text-align: center;
-  padding: 80px 8% 60px;
-  justify-content: center;
+.page-header {
   display: flex;
   align-items: center;
-  background-color: white;
+  justify-content: space-between;
   width: 80%;
+}
+
+.page-header,
+.featured-section {
+  margin: 0 120px;
+}
+
+.featured-section {
+  display: flex;
+  margin-top: 30px;
   border-radius: 8px;
+}
+
+.featured-content {
+  background-color: #010d50;
 }
